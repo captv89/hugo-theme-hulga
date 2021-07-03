@@ -21,29 +21,36 @@
 // my css
 
 /* overwrite bulma */
-.section, .hero-body {
+.section,
+.hero-body {
   padding: 3rem 3rem;
 }
+
 .tag a {
   color: currentColor;
 }
+
 .pagination-link.is-current {
   background-color: $primary;
   border-color: $primary;
   color: $white;
 }
+
 a {
   color: $primary;
 }
+
 /* fixed footer */
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
 #main {
   flex: 1;
 }
+
 .footer {
   /* border-top: 2px solid #f5f5f5; */
   background: #fafafa;
@@ -54,7 +61,7 @@ body {
 
 /* link */
 // u
-*:hover > .anchorjs-link {
+*:hover>.anchorjs-link {
   transition: color .25s linear;
 }
 
@@ -62,12 +69,15 @@ body {
 .sidebar {
   height: 100%;
 }
+
 #toc {
   padding-left: 2rem;
 }
+
 .fake-text {
   color: transparent !important;
 }
+
 .shadow-hero {
   box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.25);
   position: relative;
@@ -78,9 +88,11 @@ body {
 .highlight {
   position: relative;
 }
+
 .highlight:not(:last-child) {
   margin-bottom: 1em;
 }
+
 .chroma code:before {
   content: attr(data-lang);
   position: absolute;
@@ -94,15 +106,19 @@ body {
 .post-tag {
   margin-right: 0.5em;
 }
+
 .post-tag a {
   color: currentColor;
 }
+
 .post-tag a:hover {
   text-decoration: underline;
 }
+
 .post-meta {
   opacity: 0.9;
 }
+
 .counter-tag {
   border-left: 1px solid $white;
 }
@@ -110,21 +126,32 @@ body {
 /* posts */
 .post-box {
   position: relative;
+  margin-right: 1em;
+  margin-left: 1em;
 }
+
 .post-box-tags {
   position: absolute;
   right: 0rem;
   bottom: 0rem;
 }
+
 .post-box-tag {
   color: $primary;
   font-size: 0.9em;
 }
+
 .post-box-meta {
   padding-bottom: 0.1rem;
   opacity: 0.8;
   font-size: 0.9rem;
 }
+
 #back-to-top {
   background: $primary;
+}
+
+.post-lists {
+  display: flex;
+  flex-wrap: wrap;
 }

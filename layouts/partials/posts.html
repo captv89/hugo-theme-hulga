@@ -2,9 +2,9 @@
 <section class="section post-box-section">
   <div class="container">
     <div class="columns">
-      <div class="column is-10 is-offset-1">
+      <div class="column is-100 is-offset-0">
         <div class="columns">
-          <div class="column is-8">
+          <div class="column is-9 is-offset-0">
             <div class="post-lists">
               {{ $paginator := .Paginate (where (where .Site.Pages "Type" "post") "Kind" "page") }}
               {{ range $paginator.Pages }}
@@ -38,7 +38,7 @@
               {{ partial "paginator.html" . }}
             </div>
           </div>
-          <div class="column is-4 is-hidden-mobile">
+          <div class="column is-3 is-hidden-mobile">
             {{ if .Site.Taxonomies.categories }}
             <div class="card">
               <header class="card-header is-primary">
